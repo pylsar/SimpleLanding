@@ -312,6 +312,11 @@ nav ul li {
     width: 390px;
     height: 380px;
     border: 1px solid blue;
+    position: relative;
+}
+
+.today__card__img:hover .today__card__info{
+    display: block;
 }
 
 .today__card__img--img {
@@ -328,4 +333,31 @@ nav ul li {
     font-size: 16px;
     padding: 11px 20px; 
     background: #1B7DFF; 
+}
+
+.today__card__info{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    height: 55px;
+    width: 100%;
+    background: #151824;
+    opacity: .6;
+    color: #fff;
+}
+
+.today__card__info__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    border: 1px solid red;
+    padding-left: 25px;
+}
+
+.today__card__info__box__status img{
+    padding-right: 15px;
+    width: 28px;
 }
