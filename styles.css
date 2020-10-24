@@ -34,7 +34,7 @@ section:not(:first-child){
 /*HEADER*/
 
 .header{
-    width: 100vw;
+    width: 100%;
     min-height: 962px;
     background-image: url('img/header.png');
     background-repeat: no-repeat;
@@ -64,7 +64,7 @@ nav ul li a {
 
 .header__description {
     margin-top: 180px;
-    width: 620px;
+    max-width: 620px;
     color: #fff;
 }
 
@@ -448,3 +448,176 @@ nav ul li a {
 .footer__box__navigation ul li a {
     color: #fff;
 }
+
+/*/FOOTER*/
+
+
+/*ADAPTIVE*/
+
+@media screen and (max-width: 1200px) {
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .today__cards{
+        justify-content: space-around;
+    }
+    
+}
+
+@media screen and (max-width: 1130px) {
+    nav, 
+    .header__description,
+    .header__search,
+    .footer{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .header__description{
+        margin-top: 120px;
+    }
+    .header__search{
+        flex-direction: column;
+    }
+    .header__search--input{
+        max-width: 307px;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+    .header__search__link{
+        margin-top: 10px;
+    }
+    .header__search--link{
+        padding: 10px 20px;
+    }
+    .inspire__top__items--city,
+    .inspire__bottom__items--city{
+        font-size: 30px;
+    }
+    .footer__box__navigation ul{
+        padding-left: 20px;
+    }
+    .footer__box__img{
+        margin-right: 200px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .benefits__card{
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+   .benefits--title{
+    padding: 40px 0px 80px 0px;
+   }
+   .prefecture__top__content--title,
+   .prefecture__bottom__content--title{
+       margin-bottom: 30px;
+   } 
+   .today__cards{
+       flex-direction: column;
+       align-items: center;
+   }
+   .benefits,
+   .inspire,
+   .prefecture,
+   .today {
+       margin-bottom: 80px;
+   }
+   .footer__box__img{
+        margin-right: 100px;
+    }
+    .benefits--title{
+        font-size: 28px;
+    }
+
+    .inspire__head--title,
+    .today--title{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    nav ul li {
+        margin-left: 30px;
+    }
+    .prefecture__top__content--title,
+    .prefecture__bottom__content--title{
+        font-size: 22px;
+    }
+    .benefits__card,
+    .prefecture__top__content,
+    .prefecture__bottom__content,
+    .inspire__head--link {
+        font-size: 14px;
+    }
+    .inspire__head--link-errow{
+        margin-left: 0px;
+    }
+
+    .prefecture__top__content--link img,
+    .prefecture__bottom__content--link img{
+        margin-left: 0px;
+    }
+    .prefecture__top__content p,
+    .prefecture__bottom__content p{
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .header__description h1 {
+        font-size: 34px;
+    }
+    .header__description--text,
+    .header__search--input label{
+        font-size: 14px;
+    }
+    .header__search{
+        margin-top: 90px;
+    }
+    .header__search--input{
+        width: 252px;
+    }
+    .header__search--link{
+        font-size: 18px;
+    }
+    .prefecture__top__img:first-child,
+    .prefecture__bottom__content:first-child{
+        margin-right: 0px;
+    }
+    .prefecture__top{
+        flex-direction: column;
+        align-items: center;
+    }
+    .prefecture__top__img,
+    .prefecture__bottom__img{
+        margin-bottom: 20px;
+    }
+    .prefecture__bottom{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .inspire__top__items--city,
+    .inspire__bottom__items--city{
+        font-size: 20px;
+    }
+    .footer__box{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+    .footer__box__img{
+        margin-bottom: 50px;
+        margin-right: 0px;
+    }
+    .footer__box__navigation ul {
+        padding-right: 20px;
+    }
+}
+510
