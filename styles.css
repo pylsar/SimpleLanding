@@ -620,4 +620,71 @@ nav ul li a {
         padding-right: 20px;
     }
 }
-510
+
+@media screen and (max-width: 510px) {
+    nav{
+        flex-direction: column;
+    }
+    nav .logo{
+        margin-bottom: 20px;
+    }
+    nav ul li {
+        margin-left: 10px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    .benefits--title{
+        padding-bottom: 40px;
+    }
+    .benefits__cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .benefits__card{
+        padding-right: 0px;
+        margin-bottom: 40px;
+        height: 200px;
+    }
+
+    .inspire__head{
+        flex-direction: column;
+    }
+    .inspire__head--title{
+        margin-bottom: 10px;
+    }
+    .inspire__top__items--city,
+    .inspire__bottom__items--city{
+        font-size: 16px;
+        bottom: 5px;
+        left: 5px;
+    }
+
+    .prefecture__top__img, .prefecture__top__content,
+    .prefecture__bottom__content, .prefecture__bottom__img{
+        width: 100%;
+    }
+    .today__card{
+        width: 280px;
+        height: 477px;
+    }
+    .today__card__img{
+        width: 280px;
+        height: 273px;
+    }
+    .video__round{
+        width: 40px;
+        height: 40px;
+    }
+    .video__treangle{
+        width: 10px;
+        height: 10px;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 11px solid #000000;
+    }
+
+    .footer__box__navigation ul li a {
+        font-size: 14px;
+    }
+}
